@@ -8,13 +8,14 @@ section {
 }
 
 .container-fluid {
-    width: 1260px;
+    width: 1300px;
 }
 
 .header {
     width: 100%;
     display: flex;
-    background: #FD5432;
+    background: #fff;
+    position: sticky;
 }
 
 .header-logo {
@@ -33,7 +34,7 @@ section {
 
 .header-logo h1 {
     display: inline-block;
-    color: #0c2461;
+    color: #FD5432;
     margin-left: 15px;
     font-size: 35px;
     letter-spacing: 3px;
@@ -55,6 +56,78 @@ section {
 .header-menu ul li a {
     text-decoration: none;
     font-size: 25px;
-    color: #ffff;
+    color: #FD5432;
     display: block;
+    font-weight: 900;
+    position: relative;
+}
+
+.header-menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: #FD5432;
+    transition: .5s;
+}
+
+.header-menu ul li a:hover::after {
+    width: 100%;
+}
+
+/* banner section css */
+.banner-section {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.baner-header {
+    margin: auto;
+    display: flex;
+}
+
+.baner-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.baner-left h1 {
+    font-size: 50px;
+    color: #767575;
+}
+
+.baner-left p {
+    color: #575757;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.baner-left h1 span {
+    color: tomato;
+}
+
+.baner-left a {
+    background: tomato;
+    width: 110px;
+    text-align: center;
+    padding: 15px;
+    margin: 25px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.baner-right {
+    width: 50%;
+}
+
+.baner-right img {
+    width: 100%;
+    height: auto;
 }
