@@ -4,7 +4,7 @@
 }
 
 section {
-    width: 1366px;
+    width: 100%;
 }
 
 .container-fluid {
@@ -111,16 +111,20 @@ section {
 }
 
 .baner-left a {
-    background: tomato;
+    background-image: linear-gradient(to right, #FC8F49, #FE492E);
     width: 110px;
     text-align: center;
-    padding: 15px;
+    padding: 15px 20px;
     margin: 25px 0;
     border-radius: 10px;
     text-decoration: none;
     color: #fff;
     font-size: 16px;
     letter-spacing: 2px;
+}
+
+.baner-left a:hover {
+    background-image: linear-gradient(to right, #FE492E, #FC8F49);
 }
 
 .baner-right {
@@ -130,4 +134,243 @@ section {
 .baner-right img {
     width: 100%;
     height: auto;
+}
+
+
+
+/* about section */
+
+.about-section {
+    background: url(./images/7.png) no-repeat center center;
+    background-size: contain;
+    margin: 100px 0;
+    display: flex;
+}
+
+.about-head {
+    padding: 100px 0;
+}
+
+.about-left {
+    width: 50%;
+    text-align: center;
+}
+
+.about-left img {}
+
+.about-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-right h1 {
+    font-size: 35px;
+    color: #FD5432;
+}
+
+.about-right p {
+    color: #575757;
+    font-size: 18px;
+    margin: 40px auto 60px;
+    text-align: justify;
+    width: 80%;
+}
+
+.about-right a {
+    background-image: linear-gradient(to right, #FC8F49, #FE492E);
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+
+/* Food section css */
+
+.food-section {
+    width: 100%;
+    margin: 80px 0;
+}
+
+.food {
+    margin: auto;
+}
+
+.food h1 {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: 30px 0;
+    color: #FD5432;
+}
+
+.food p {
+    text-align: center;
+    color: #575757;
+    width: 50%;
+    font-size: 18px;
+    margin: 0 auto 60px;
+}
+
+.food-item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-between;
+    flex-wrap: wrap;
+}
+
+.food-item-list {
+    width: 30%;
+    margin-bottom: 20px;
+    position: relative;
+    transition: 3s;
+}
+
+.food-item-list:hover .food-hidden-div {
+    visibility: visible;
+    opacity: 1;
+}
+
+.food-item-list .food-hidden-div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #fff;
+    background: rgba(52, 51, 51, 0.477);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+
+/* .food-item-list::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(52, 51, 51, 0.477);
+    visibility: hidden;
+    opacity: 0;
+} */
+
+.food-item-list img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* recipe section */
+.recipe-section {
+    margin: 100px 0;
+}
+
+.recipe {
+    margin: auto;
+}
+
+.recipe-header h2 {
+    text-align: center;
+    color: #FD5432;
+    font-size: 40px;
+}
+
+.recipe-header p {
+    color: #575757;
+    font-size: 18px;
+    width: 60%;
+    margin: 40px auto;
+    text-align: center
+}
+
+.recipe-item {
+    display: flex;
+    justify-content: space-between
+}
+
+.recipe-item-list {
+    width: 40%;
+    padding: 50px;
+    box-shadow: 5px 5px 30px #ddd;
+    border-radius: 15px;
+}
+
+.recipe-item-list img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-item-list h4 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 15px 0 10px;
+}
+
+.recipe-item-list p {
+    color: #575757;
+}
+
+
+
+/* counter secton */
+
+.count-section {
+    margin: 100px 0;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    box-shadow: 7px 8px 40px #ddd;
+    padding: 70px 0;
+}
+
+.first-div {
+    width: 30%;
+    text-align: center;
+}
+
+.second-div {
+    width: 30%;
+    text-align: center;
+}
+
+.third-div {
+    width: 30%;
+    text-align: center;
+}
+
+
+
+/* footer section css */
+
+footer {
+    background: #000;
+    text-align: center;
+    padding: 70px 0;
+}
+
+footer h1 {
+    color: #ddd;
+    margin: 15px 0;
+}
+
+footer span {
+    color: #FB9049;
+}
+
+footer p {
+    color: #575757;
 }
